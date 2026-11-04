@@ -6,17 +6,17 @@ Merhaba, bu proje Web Programlama dersi uygulaması için hazırladığım basit
 
 
 
-\## Proje İçeriği ve Sayfalar
+ Proje İçeriği ve Sayfalar
 
-\- \*\*index.html\*\*: Karşılama metninin bulunduğu ana sayfa.
+\*index.html\*: Karşılama metninin bulunduğu ana sayfa.
 
-\- \*\*hakkimda.html\*\*: Kendimden ve ilgilendiğim teknolojilerden kısaca bahsettiğim sayfa.
+\*hakkimda.html\*: Kendimden ve ilgilendiğim teknolojilerden kısaca bahsettiğim sayfa.
 
-\- \*\*projeler.html\*\*: Üzerinde çalıştığım ve geliştirdiğim basit projelerin listesi.
+\*projeler.html\*: Üzerinde çalıştığım ve geliştirdiğim basit projelerin listesi.
 
-\- \*\*iletisim.html\*\*: Ziyaretçilerin mesaj bırakabileceği basit bir iletişim formu.
+\*iletisim.html\*: Ziyaretçilerin mesaj bırakabileceği basit bir iletişim formu.
 
-\- \*\*css/style.css\*\*: Sitenin temel renk, font ve düzen ayarlarının bulunduğu CSS dosyası.
+\*css/style.css\*: Sitenin temel renk, font ve düzen ayarlarının bulunduğu CSS dosyası.
 
 
 
