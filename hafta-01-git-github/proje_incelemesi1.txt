@@ -1,0 +1,131 @@
+================================================================================
+
+KİŞİSEL PROJE İNCELEMESİ: Scrapling
+
+================================================================================
+
+
+
+1. PROJE ADI
+
+--------------------------------------------------------------------------------
+
+Scrapling (D4Vinci / Scrapling)
+
+
+
+2. GITHUB ADRESİ
+
+--------------------------------------------------------------------------------
+
+https://github.com/D4Vinci/Scrapling
+
+
+
+3. KULLANILAN PROGRAMLAMA DİLİ
+
+--------------------------------------------------------------------------------
+
+Python (Ağırlıklı olarak Python 3.10 ve üzeri sürümler)
+
+
+
+4. KULLANILAN FRAMEWORK VE KÜTÜPHANELER
+
+--------------------------------------------------------------------------------
+
+Projede gözüme çarpan temel bağımlılıklar ve mimari bileşenler:
+
+- Özel Asenkron Kazıma Mimarisi (Python tabanlı async altyapısı)
+
+- Playwright & Camoufox (Özellikle gizlilik ve anti-bot sistemlerini aşmak için)
+
+- Parsel, Selectolax & httpx (Sayfa içeriğini hızlıca parse etmek ve istek atmak için)
+
+- C tabanlı optimizasyon araçları (Ayrıştırma hızını artırmak adına eklenmiş)
+
+- FastMCP (Model Context Protocol entegrasyonu için) ve Typer (CLI aracı için)
+
+
+
+5. PROJENİN AMACI
+
+--------------------------------------------------------------------------------
+
+Projeyi incelediğimde temel odak noktasının "anti-bot engelleyicilere yakalanmadan hızlı 
+
+veri çekmek" olduğunu gördüm. Scrapling; basit HTTP isteklerinden tutun da karmaşık, 
+
+JavaScript ağırlıklı sitelere kadar her türlü web kazıma işini kolaylaştırmayı 
+
+hedefleyen adaptif bir framework. Sayfa yapısı değişse bile elementleri akıllı 
+
+bir şekilde bulabilmesi ve tarayıcı izlerini gizleyebilmesi (stealth) en büyük artısı.
+
+
+
+6. YAKLAŞIK COMMIT SAYISI
+
+--------------------------------------------------------------------------------
+
+1786+ commit (Halen aktif olarak geliştiriliyor ve sık güncelleniyor)
+
+
+
+7. CONTRIBUTOR (KATKIDA BULUNAN) SAYISI
+
+--------------------------------------------------------------------------------
+
+Yaklaşık 47 geliştirici projeye katkı sağlamış.
+
+
+
+8. KLASÖR YAPISI
+
+--------------------------------------------------------------------------------
+
+Projenin kod organizasyonu gayet derli toplu hazırlanmış:
+
+
+
+.
+
+├── scrapling/                # Ana kodların yer aldığı dizin
+
+│   ├── core/                 # Parsing işlemleri ve sayfa işleyiciler burada
+
+│   ├── fetchers/             # HTTP ve Playwright/Stealth istek motorları
+
+│   ├── spiders/              # Büyük ölçekli taramalar (crawl) için spider yapısı
+
+│   ├── cli/                  # Terminalden kullanım sağlayan komut satırı aracı
+
+│   └── ai/                   # AI ve MCP entegrasyon modülleri
+
+├── docs/                     # Dokümantasyon dosyaları
+
+├── tests/                    # Yazılan birim ve entegrasyon testleri
+
+├── pyproject.toml            # Bağımlılıklar ve proje ayarları
+
+└── README.md                 # Karşılama ve hızlı başlangıç rehberi
+
+
+
+9. README DOSYASI İNCELEME
+
+--------------------------------------------------------------------------------
+
+README'yi incelerken oldukça net ve görsel olarak doyurucu buldum:
+
+- Giriş & Rozetler: Sürüm, PyPI indirmeleri ve Discord linkleri en başa koyulmuş.
+
+- Dil Desteği: README içeriğinin farklı dillere çevrilmiş olması dikkatimi çekti.
+
+- Özellikler & Performans: Diğer kazıma araçlarıyla (Scrapy, BeautifulSoup4) yapılan 
+
+  hız karşılaştırma tabloları eklenmiş.
+
+- Kurulum & Kullanım Örnekleri: `pip install scrapling` sonrası kodun nasıl 
+
+  çalıştırılacağı sade örneklerle anlatılmış.

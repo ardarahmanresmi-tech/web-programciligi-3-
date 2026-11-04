@@ -1,0 +1,125 @@
+================================================================================
+
+KİŞİSEL PROJE İNCELEMESİ: Firecrawl
+
+================================================================================
+
+
+
+1. PROJE ADI
+
+--------------------------------------------------------------------------------
+
+Firecrawl (firecrawl / firecrawl)
+
+
+
+2. GITHUB ADRESİ
+
+--------------------------------------------------------------------------------
+
+https://github.com/firecrawl/firecrawl
+
+
+
+3. KULLANILAN PROGRAMLAMA DİLİ
+
+--------------------------------------------------------------------------------
+
+TypeScript / JavaScript (Ağırlıklı backend servisleri) ve Python (SDK geliştirme)
+
+
+
+4. KULLANILAN FRAMEWORK VE KÜTÜPHANELER
+
+--------------------------------------------------------------------------------
+
+Projenin arkasındaki mimaride gördüğüm ana bileşenler:
+
+- Node.js & Express/NestJS (REST API altyapısı için)
+
+- Next.js (Dokümantasyon ve web sitesi için)
+
+- Redis & BullMQ (Arka planda çalışan kuyruk sistemleri ve worker'lar için)
+
+- PostgreSQL / Supabase (Veri yönetimi için)
+
+- Puppeteer / Playwright (Sayfa içeriklerini işlemek için)
+
+
+
+5. PROJENİN AMACI
+
+--------------------------------------------------------------------------------
+
+Firecrawl'ı incelediğimde, herhangi bir web sitesini doğrudan AI modellerinin 
+
+anlayabileceği temiz bir Markdown veya JSON formatına dönüştürmek için tasarlandığını 
+
+gördüm. Sadece tek sayfayı değil, tüm domain'i tarayıp (crawl) içeriği yapay zeka 
+
+ajanlarına (RAG uygulamaları vb.) hazır veri olarak sunan bir API altyapısı sağlıyor.
+
+
+
+6. YAKLAŞIK COMMIT SAYISI
+
+--------------------------------------------------------------------------------
+
+6784+ commit (Oldukça olgun ve sürekli geliştirilen bir kod tabanı var)
+
+
+
+7. CONTRIBUTOR (KATKIDA BULUNAN) SAYISI
+
+--------------------------------------------------------------------------------
+
+175 geliştirici katkı sağlamış.
+
+
+
+8. KLASÖR YAPISI
+
+--------------------------------------------------------------------------------
+
+Proje bir Monorepo yapısıyla yönetiliyor, bileşenler güzel ayrıştırılmış:
+
+
+
+.
+
+├── apps/                     # Çalıştırılabilir uygulamalar
+
+│   ├── api/                  # Dışarıya sunulan REST API servisleri
+
+│   ├── worker/               # Kuyruktan iş alıp web taraması yapan sistemler
+
+│   └── docs/                 # Web dokümantasyon uygulaması
+
+├── packages/                 # Proje içi SDK'lar ve paylaşılan paketler
+
+│   ├── js-sdk/               # Node/TS için istemci paketi
+
+│   └── python-sdk/           # Python için istemci paketi
+
+├── docker/                   # Kendi sunucunda çalıştırmak (self-host) için yapılandırmalar
+
+├── docker-compose.yml        # Yerel çalışma ortamı kurmak için Docker dosyası
+
+└── README.md                 # Ana proje dokümanı
+
+
+
+9. README DOSYASI İNCELEME
+
+--------------------------------------------------------------------------------
+
+Firecrawl'ın README yapısını gayet profesyonel buldum:
+
+- Rozetler ve Başlık: Projenin ne işe yaradığı kısa ve vurucu bir şekilde belirtilmiş.
+
+- Kullanım Kodları: Python, JS, cURL gibi farklı diller için API kullanım örnekleri verilmiş.
+
+- Self-Hosting Açıklaması: Projeyi kendi sunucunda Docker Compose ile nasıl kaldırabileceğin adım adım anlatılmış.
+
+- API Uç Noktaları: `/scrape`, `/crawl`, `/search` gibi ana uç noktaların işlevleri özetlenmiş.

@@ -1,0 +1,101 @@
+================================================================================
+                        GIT VE GITHUB TEMEL KAVRAMLARI
+================================================================================
+
+1. GIT NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: Benim bilgisayarimda calisan bir versiyon kontrol sistemi. Kod yazarken 
+  yaptigim her degisikligi adim adim kaydediyor. Yani projede bir seyleri bozarsam 
+  veya tikanirsam, rahatca daha once calisan bir surume geri donebiliyorum. 
+  Projenin bir nevi "zaman makinesi" diyebilirim.
+- Ornek: Web sitesine yeni bir ozellik eklerken sistemi cokerttigimde, panik yapmadan 
+  tek bir komutla dun aksamki sorunsuz calisan koda geri donebiliyorum.
+
+
+2. GITHUB NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: Git ile kendi bilgisayarimda tuttugum bu versiyonlari ve projeleri 
+  internete yukleyip sakladigim web tabanli bir platform. Kodlarimi bulutta 
+  yedeklememi, farkli bilgisayarlardan erismemi ve baskalariyla ortak calismami sagliyor.
+- Ornek: Evdeki masaustu bilgisayarimda yazdigim kodlari GitHub'a atiyorum; 
+  sonra okulda ya da laptopta direkt oradan cekip kaldigim yerden odevime/projeme 
+  devam edebiliyorum.
+
+
+3. GIT ILE GITHUB ARASINDAKI FARK NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: Git benim bilgisayarimda yerel olarak calisan aracin kendisi; 
+  projelerimin gecmisini o tutuyor. GitHub ise bu Git projelerimi internet uzerinde 
+  depoladigim, sergiledigim ve baskalariyla paylastigim site (sunucu).
+- Ozet: Git'i offline olarak kendi bilgisayarimda tek başima da kullanirim. 
+  Ama projeyi internete yedeklemek veya arkadasima gondermek istedigimde 
+  GitHub devreye girer.
+
+
+4. REPOSITORY (REPO) NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: Projemin butun dosyalarinin, klasorlerinin ve o gune kadar yaptigim 
+  tum degisiklik gecmisinin durdugu klasor/depo.
+- Ornek: Bilgisayarimdaki bir proje klasorunde `git init` komutunu calistirdigim 
+  an, o klasor benim icin bir Local Repository (Yerel Depo) haline geliyor.
+
+
+5. COMMIT NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: Projede yaptigim degisiklikleri "Tamam, bu kisim bitti, burayi kaydet" 
+  diyerek bir aciklama mesajiyla Git gecmisine muhurleme islemim.
+- Ornek: Kodda giris ekranindaki hatayi cozdukten sonra terminale sunu yazip 
+  ani kaydediyorum:
+  git commit -m "Giris ekrani hatasi cozuldu"
+
+
+6. BRANCH (DAL) NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: Ana kodumu hic riske atmadan, yeni bir ozellik denemek veya bir hatayi 
+  cozmek icin projeden ayirdigim bagimsiz calisma cizgisi/kolu.
+- Ornek: Calisan bir projem var (main branch). Yeni bir panel eklemek istiyorum 
+  ama ana kod bozulsun istemiyorum. "yeni-panel" adinda bir branch acip rahatca 
+  denemelerimi orada yapiyorum.
+
+
+7. MERGE (BIRLESTIRME) NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: Farkli bir branch uzerinde gelistirip test ettigim ve calistigindan 
+  emin oldugum kodlari alip, projenin ana dalina (main) aktarma/birlestirme islemim.
+- Ornek: "yeni-panel" branch'inde paneli sorunsuz bitirdikten sonra ana dala gecip 
+  merge komutuyla o yeni paneli projenin asil koduna dahil ediyorum.
+
+
+8. CLONE (KLONLAMA) NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: GitHub'da gordugum bir projeyi (kendi projem de olabilir, baskasinin 
+  acik kaynak projesi de) butun dosyalari ve gecmisiyle birlikte kendi 
+  bilgisayarima indirme islemim.
+- Ornek: GitHub'daki projemin linkini alip terminale `git clone <link>` yazarak 
+  projeyi birebir bilgisayarima cekiyorum.
+
+
+9. PULL (CEKME) NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: GitHub'daki depoda yapilan yeni degisiklikleri veya ekip arkadasimin 
+  ekledigi kodlari kendi bilgisayarima indirip yerel projemi guncelleme islemim.
+- Ornek: Proje uzerinde calismaya baslamadan once projede yeni bir sey var mi 
+  diye bilgisayarimda `git pull` yapiyorum ki en guncel kodlar bende olsun.
+
+
+10. PUSH (GONDERME) NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: Kendi bilgisayarimda yazdigim ve commit'ledigim degisiklikleri 
+  GitHub'daki uzak depoma yukleme islemim.
+- Ornek: Bilgisayarimda yeni fonksiyonu yazip commit attiktan sonra `git push` 
+  diyerek bu kodlari GitHub'a gonderiyorum, boylece web sitesinde de guncelleniyor.
+
+
+11. .GITIGNORE DOSYASININ AMACI NEDIR?
+--------------------------------------------------------------------------------
+- Aciklama: Git'in takip etmesini istemedigim, GitHub'a yuklenmesini luzumsuz 
+  gordugum veya gizli kalmasi gereken dosya ve klasorleri belirttigim liste dosyasi.
+- Ornek: Projedeki veritabanı sifrelerimi tuttugum .env dosyasini veya gereksiz 
+  sistem klasorlerini bu dosyanin icine yaziyorum ki yanlislikla GitHub'a yuklenip 
+  disariya sizmasin.
+================================================================================

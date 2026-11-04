@@ -1,0 +1,129 @@
+================================================================================
+
+KİŞİSEL PROJE İNCELEMESİ: Browser Use
+
+================================================================================
+
+
+
+1. PROJE ADI
+
+--------------------------------------------------------------------------------
+
+Browser Use (browser-use / browser-use)
+
+
+
+2. GITHUB ADRESİ
+
+--------------------------------------------------------------------------------
+
+https://github.com/browser-use/browser-use
+
+
+
+3. KULLANILAN PROGRAMLAMA DİLİ
+
+--------------------------------------------------------------------------------
+
+Python (Core mantık için 3.11+) ve TypeScript (İstemci tarafı araçları)
+
+
+
+4. KULLANILAN FRAMEWORK VE KÜTÜPHANELER
+
+--------------------------------------------------------------------------------
+
+Projeyi incelerken dikkatimi çeken başlıca teknolojiler:
+
+- LangChain / OpenAI SDK (Yapay zeka ajanı karar mekanizmaları için)
+
+- Playwright (Tarayıcıyı otomatik yönetmek ve ekrandan veri okumak için)
+
+- asyncio (Asenkron iş parçacığı yönetimi)
+
+- Pydantic v2 (Veri modelleri ve tip doğrulamaları için)
+
+- uv & Typer (Paket yönetimi ve CLI geliştirmesi için)
+
+
+
+5. PROJENİN AMACI
+
+--------------------------------------------------------------------------------
+
+Browser Use, yapay zeka modellerinin (LLM) tıpkı bir insan gibi web tarayıcısını 
+
+kullanabilmesini sağlıyor. Ajanın web sitelerine girmesini, butonlara tıklamasını, 
+
+formları doldurmasını ve istenen görevleri otonom şekilde yapmasını hedefleyen çok 
+
+popüler bir açık kaynak projesi. Kazıma yapmaktan öte, site üzerinde eylem gerçekleştirmeye 
+
+odaklanmış.
+
+
+
+6. YAKLAŞIK COMMIT SAYISI
+
+--------------------------------------------------------------------------------
+
+~10000+ commit (Oldukça yüksek bir commit hareketliliği var)
+
+
+
+7. CONTRIBUTOR (KATKIDA BULUNAN) SAYISI
+
+--------------------------------------------------------------------------------
+
+366 geliştirici projeye katkıda bulunmuş, topluluğu çok aktif.
+
+
+
+8. KLASÖR YAPISI
+
+--------------------------------------------------------------------------------
+
+Kod mimarisi katmanlara ayrılmış ve okunması oldukça rahat:
+
+
+
+.
+
+├── browser_use/              # Ana Python kütüphanesi
+
+│   ├── agent/                # LLM kararlarını ve prompt'ları yöneten kısım
+
+│   ├── browser/              # Playwright oturumları ve tarayıcı ayarları
+
+│   ├── controller/           # Ajanın yaptığı eylemler (tıklama, yazma vb.)
+
+│   └── dom/                  # Sayfadaki elemanları analiz edip etiketleyen modül
+
+├── examples/                 # Farklı LLM'lerle yapılmış örnek projeler
+
+├── tests/                    # Test senaryoları
+
+├── pyproject.toml            # Proje bağımlılıkları ve ayarlar
+
+└── README.md                 # Detaylı tanıtım dokümanı
+
+
+
+9. README DOSYASI İNCELEME
+
+--------------------------------------------------------------------------------
+
+README tarafında özellikle şu detaylar gözüme çarptı:
+
+- Görsel Demolar: Ajanın tarayıcıda neler yapabildiğini gösteren GIF/Video demoları eklenmiş.
+
+- Hızlı Başlangıç: `uv add browser-use` ile kurulum yapıp birkaç satırda ajanı 
+
+  çalıştırma adımları gösterilmiş.
+
+- Modellerle Entegrasyon: OpenAI, Anthropic ve yerel Ollama modellerinin projeye 
+
+  nasıl bağlanacağı kodlarla açıklanmış.
+
+- Topluluk ve Lisans: MIT lisansı altında, Discord sunucusu ve katkı sağlama yönergeleri var.
